@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة إبداعية متعددة النوافذ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #2c81e9);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .button {
+            background-color: #ff4081;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            margin: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .button:hover {
+            background-color: #ff79b0;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>مرحباً بك في صفحتي التجارية</h1>
+    <p>اضغط على الأزرار لعرض المنتجات مع اسعارها:</p>
+
+    <button class="button" onclick="navigateTo('https://afnanfdl.github.io/store/')">فساتين الزفاف</button>
+    <button class="button" onclick="navigateTo('https://afnanfdl.github.io/store2/')">فساتين الغسل</button>
+    <button class="button" onclick="navigateTo('https://afnanfdl.github.io/store3/')">التوابع</button>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>
